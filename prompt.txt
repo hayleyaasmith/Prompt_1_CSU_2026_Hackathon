@@ -1,0 +1,61 @@
+CSU hackathon - Geospatial problem statements for consideration
+Idea 1 – Fruit Fly spread and establishment
+Fruit flies pose a significant threat to U.S. agricultural production and the economy, if left undetected and
+allowed to spread. The USDA’s Fruit Fly Exclusion and Detection Program within Plant Protection and
+Quarantine works to prevent fruit fly populations from becoming established or spreading in the United
+States through a domestic surveillance network and mitigation efforts at ports of entry. Understanding the
+passenger and cargo pathway volumes and risks from foreign countries with fruit fly infestations countries
+outside of the U.S. is critical to efficient surveillance and early detection.
+Some ideas to consider OR expected outcomes:
+1. Create a solution using geospatial data, analysis, and visualizations to understand potential fruit fly
+establishment from foreign pathways into the contiguous U.S., assisting program managers with data
+driven decision making.
+a. What foreign countries and their associated pathways pose the highest risk for fruit fly entry into
+the U.S. and during what time of the year?
+b. What indicators/variables would help predict where fruit flies would enter and establish in the
+U.S?
+2. Create an interactive application that assists managers to visualize the highest risk pathways at any
+given time of the year and the monthly flow of passengers or cargo.
+3. Any other ideas to contribute to optimizing fruit fly detection in the U.S. from foreign pathways
+Potential Public Passenger and Cargo Pathway Data Sources
+Source Type of Data Access Level Relevance to Fruit Fly Risk
+DOT – BTS Airline Origin &
+Destination (DB1B) Air passenger volumes by route
+Public
+(Aggregated)
+Medium – Helps estimate passenger
+flow from risk countries
+DOT – BTS T-100 International
+Segment Flight-level passenger counts Public
+Medium – Detailed route-level passenger
+data
+TSA Passenger screening volumes
+Public
+(Aggregated)
+Low – Trend indicator, not origin-specific
+U.S. Census Bureau – Foreign
+Trade Data
+Import/export stats by commodity
+& country
+Public High – Tracks agricultural imports from
+infested regions
+BTS – Freight Analysis
+Framework
+International freight flows by
+mode & commodity
+Public
+Medium – Useful for cargo volume
+modeling
+Source Type of Data Access Level Relevance to Fruit Fly Risk
+USDA Agricultural Import Data Imported fruits & vegetables by
+country
+Public High – Direct link to host commodities
+UN Comtrade / WTO Global trade flow data Public
+Medium – Context for pressure from
+infested countries
+IPPC Pest status reports &
+phytosanitary info
+Public High – Confirms pest presence in origin
+countries
+USDA APHIS Pest Risk Analysis
+Reports Historical pest interception data Public High – Validates pathway risk

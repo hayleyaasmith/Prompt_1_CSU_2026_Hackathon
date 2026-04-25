@@ -1,0 +1,10 @@
+pandas>=2.2
+pyarrow>=15
+numpy>=1.26
+statsmodels>=0.14
+scipy>=1.11
+streamlit>=1.50
+plotly>=6.0
+rasterio>=1.4
+rasterstats>=0.20
+geopandas>=1.0
