@@ -1,0 +1,78 @@
+year,month,state_or_port,species,count,source,source_url,notes
+2026,4,CA,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Expand; doc: DA-2026-16
+2026,4,CA,Bactrocera dorsalis,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Remove; doc: DA-2026-14
+2026,4,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish; doc: DA-2026-12
+2026,3,CA,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish; doc: DA-2026-10
+2026,3,TX,Anastrepha serpentina,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish; doc: DA-2026-09
+2026,2,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish; doc: DA-2026-05
+2026,1,TX,Anastrepha obliqua,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish; doc: DA-2026-04
+2026,1,CA,Ceratitis capitata,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Expand; doc: DA-2026-03
+2026,1,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Expand; doc: DA-2026-02
+2025,12,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish/Expand; doc: DA-2025-54
+2025,12,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish; doc: DA-2025-53
+2025,12,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Remove; doc: DA-2025-51
+2025,12,CA,Ceratitis capitata,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Expand; doc: DA-2025-50
+2025,11,CA,Ceratitis capitata,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Expand; doc: DA-2025-46
+2025,10,CA,Ceratitis capitata,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Expand; doc: DA-2025-45
+2025,10,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Remove; doc: DA-2025-44
+2025,10,CA,Ceratitis capitata,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Expand; doc: DA-2025-43
+2025,10,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Amend; doc: DA-2025-42
+2025,10,CA,Ceratitis capitata,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Remove; doc: DA-2025-41
+2025,10,CA,Ceratitis capitata,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Expand; doc: DA-2025-40
+2025,9,CA,Ceratitis capitata,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish/Expand; doc: DA-2025-39
+2025,9,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Amend; doc: DA-2025-38
+2025,9,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Amend; doc: DA-2025-36
+2025,8,CA,Ceratitis capitata,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish/Expand; doc: DA-2025-35
+2025,8,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Amend; doc: DA-2025-32
+2025,7,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Amend; doc: DA-2025-30
+2025,7,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Amend; doc: DA-2025-27
+2025,6,CA,Bactrocera dorsalis,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Remove; doc: DA-2025-24
+2025,6,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Amend; doc: DA-2025-23
+2025,5,NY,Rhagoletis cerasi,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Expand; doc: DA-2025-19
+2025,4,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish/Expand; doc: DA-2025-16
+2025,3,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Expand; doc: DA-2025-13
+2025,2,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish/Expand; doc: DA-2025-06
+2025,2,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Other; doc: DA-2025-05
+2025,1,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish/Expand; doc: DA-2025-04
+2025,1,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Amend; doc: DA-2025-01
+2024,12,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Expand; doc: DA-2024-46
+2024,11,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Amend; doc: DA-2024-44
+2024,10,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Expand; doc: DA-2024-40
+2024,9,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish; doc: DA-2024-37
+2024,8,TX,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Remove; doc: DA-2024-33
+2022,4,US,Rhagoletis cerasi,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Amend; doc: DA-2022-17
+2021,7,US,Anastrepha ludens,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish; doc: DA-2021-17
+2020,5,US,Rhagoletis cerasi,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Amend; doc: DA-2020-10
+2018,7,US,Rhagoletis cerasi,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Establish; doc: DA-2018-23
+2018,7,US,Rhagoletis cerasi,1,APHIS_PDR,https://www.aphis.usda.gov/plant-pests-diseases/fruit-flies/fruit-fly-federal-orders-spro-letters,CY; detection; Amend; doc: DA-2018-23b
+2026,3,CA,Anastrepha suspensa,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Los Angeles; city: Long Beach
+2025,10,CA,Anastrepha suspensa,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Los Angeles; city: Los Angeles
+2025,7,CA,Bactrocera correcta,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: San Jose
+2025,8,CA,Ceratitis capitata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: San Jose
+2025,8,CA,Ceratitis capitata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: San Jose; Amendment 1
+2025,9,CA,Ceratitis capitata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: San Jose; Amendment 2
+2025,9,CA,Ceratitis capitata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: San Jose; Amendment 3
+2025,10,CA,Ceratitis capitata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: San Jose; Amendment 4
+2025,10,CA,Ceratitis capitata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: San Jose; Amendment 5
+2025,10,CA,Ceratitis capitata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: San Jose; Amendment 6
+2025,10,CA,Ceratitis capitata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: San Jose; Amendment 7
+2025,11,CA,Ceratitis capitata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: San Jose; Amendment 8
+2025,11,CA,Ceratitis capitata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: San Jose; Amendment 9
+2026,1,CA,Ceratitis capitata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: San Jose; Amendment 10
+2026,2,CA,Anastrepha ludens,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: San Diego; city: La Mesa
+2026,3,CA,Anastrepha ludens,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: San Diego; city: La Mesa; Amendment 1
+2026,3,CA,Anastrepha ludens,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: San Diego; city: La Mesa; Amendment 2
+2025,9,CA,Bactrocera dorsalis,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Alameda; city: Fremont
+2025,9,CA,Bactrocera dorsalis,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Los Angeles; city: Wilmington
+2025,8,CA,Bactrocera dorsalis,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Los Angeles; city: Long Beach
+2025,8,CA,Bactrocera dorsalis,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Los Angeles; city: West Hills
+2025,7,CA,Bactrocera dorsalis,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Los Angeles; city: Monterey Park
+2025,7,CA,Bactrocera dorsalis,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Los Angeles; city: South El Monte
+2025,7,CA,Bactrocera dorsalis,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Orange; city: Villa Park
+2025,8,CA,Bactrocera dorsalis,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Riverside; city: Jurupa Valley
+2025,9,CA,Bactrocera dorsalis,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Riverside; city: Jurupa Valley; Amendment 1
+2025,9,CA,Bactrocera dorsalis,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Riverside/San Bernardino; city: Jurupa Valley; Amendment 2
+2025,10,CA,Bactrocera dorsalis,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Riverside/San Bernardino; city: Jurupa Valley; Amendment 3
+2025,11,CA,Bactrocera dorsalis,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Santa Clara; city: Milpitas
+2025,8,CA,Bactrocera zonata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Los Angeles; city: Culver City
+2025,9,CA,Bactrocera zonata,1,CDFA,https://www.cdfa.ca.gov/plant/pdep/treatment/treatment_maps.html,CY; detection; outbreak event; county: Los Angeles; city: Culver City; Amendment 1
