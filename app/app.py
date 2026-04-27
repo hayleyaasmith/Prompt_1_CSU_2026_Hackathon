@@ -1197,14 +1197,14 @@ with tab_pri:
                     hovertemplate="<b>%{customdata[0]}, %{customdata[1]}</b><br>"
                                   "%{z:.1f} favorable months / 12<extra></extra>"
                 )
-                st.plotly_chart(fig, width="stretch")
+                st.plotly_chart(fig, width="stretch", key="est_climate_map")
             elif view_mode == "layered":
                 cs_county_local = load_climate_county()
                 climate_sp = cs_county_local[cs_county_local["species"] == sp_pri].copy()
                 centroids_df = load_county_centroids()
                 fig = layered_risk_map(snap_active, climate_sp, centroids_df,
                                        counties_geo, SPECIES_SHORT[sp_pri])
-                st.plotly_chart(fig, width="stretch")
+                st.plotly_chart(fig, width="stretch", key="est_layered_map")
                 st.caption(
                     f"**Background** = {SPECIES_SHORT[sp_pri]} climate suitability for "
                     f"establishment. **Bubbles** = combined risk in **{MONTH_NAMES[month_sel - 1]} "
@@ -1219,7 +1219,7 @@ with tab_pri:
                                 "mu_pathway": ":.2f", "frac_year_favorable": ":.2f",
                                 "combined": ":.3f", "fips": False},
                 )
-                st.plotly_chart(fig, width="stretch")
+                st.plotly_chart(fig, width="stretch", key="est_risk_map")
 
         with m_right:
             st.markdown(
@@ -1360,7 +1360,7 @@ with tab_pri:
             f"<span class='section-meta'>green box = operational window · faded = outlook</span></div>",
             unsafe_allow_html=True,
         )
-        st.plotly_chart(fig2, width="stretch")
+        st.plotly_chart(fig2, width="stretch", key="pri_seasonality")
 
     csv_button(annual_sp.sort_values("annual_combined", ascending=False),
                f"pestcast_priorities_{sp_pri}_cy{FORECAST_YEAR}.csv", key="dl_pri_annual")
@@ -1588,7 +1588,7 @@ with tab_surv:
             fig.update_layout(legend=dict(orientation="h", yanchor="bottom", y=1.02,
                                           xanchor="right", x=1, title=None,
                                           font=dict(size=11)))
-            st.plotly_chart(style_chart(fig), width="stretch")
+            st.plotly_chart(style_chart(fig), width="stretch", key="path_top_countries")
 
 
 # ---------------------------------------------------------------------------
@@ -1662,7 +1662,7 @@ with tab_path:
                          labels={"origin_country": "Origin", "passengers": "Passengers"},
                          color_discrete_sequence=["#15803d"])
             fig.update_traces(hovertemplate="<b>%{x}</b><br>%{y:,.0f} passengers<br>%{customdata[0]} US ports<br>%{customdata[1]:,.0f} kg freight<extra></extra>")
-            st.plotly_chart(style_chart(fig), width="stretch")
+            st.plotly_chart(style_chart(fig), width="stretch", key="path_top_origins")
 
         with c2:
             st.markdown(
@@ -1679,7 +1679,7 @@ with tab_path:
                           labels={"dest_us_port": "US port (IATA)", "passengers": "Passengers"},
                           color_discrete_sequence=["#15803d"])
             fig2.update_traces(hovertemplate="<b>%{x}</b><br>%{y:,.0f} passengers<br>from %{customdata[0]} countries<extra></extra>")
-            st.plotly_chart(style_chart(fig2), width="stretch")
+            st.plotly_chart(style_chart(fig2), width="stretch", key="path_top_ports")
 
         st.markdown(
             f"<div class='section-title'>Annual exposure share by species"
@@ -1715,7 +1715,7 @@ with tab_path:
                            legend=dict(orientation="h", yanchor="bottom", y=1.02,
                                        xanchor="right", x=1, title=None,
                                        font=dict(size=11)))
-        st.plotly_chart(style_chart(fig3), width="stretch")
+        st.plotly_chart(style_chart(fig3), width="stretch", key="path_share_by_species")
 
 
 # ---------------------------------------------------------------------------
@@ -1770,7 +1770,7 @@ with tab_est:
             hovertemplate="<b>%{customdata[0]}, %{customdata[1]}</b><br>"
                           "%{z:.1f} favorable months / 12<extra></extra>"
         )
-        st.plotly_chart(fig, width="stretch")
+        st.plotly_chart(fig, width="stretch", key="est_layered_risk")
         st.caption(
             f"**{env['note']}.** Color shows the longest cyclic run of consecutive "
             f"favorable months at this species' envelope. **Each species has its "
@@ -1846,11 +1846,10 @@ with tab_est:
                                   text=r["label"], showarrow=True, arrowhead=1,
                                   ax=ax_, ay=ay_, font=dict(size=10, color="#334155"))
         fig_sc.update_layout(height=520)
-        st.plotly_chart(style_chart(fig_sc), width="stretch")
+        st.plotly_chart(style_chart(fig_sc), width="stretch", key="est_scatter")
 
 
-# ---------------------------------------------------------------------------
-# Tab — MODEL (diagnostics)
+# ---------------------------------------------------------------------------# Tab — MODEL (diagnostics)
 # ---------------------------------------------------------------------------
 
 with tab_model:
