@@ -454,42 +454,41 @@ hr { margin: 1rem 0; border-color: #e2e8f0 !important; }
     color: #0f172a;
 }
 
-/* 1. Remove the 'display: none' lines so the button actually exists */
-    
-    /* 2. Force the sidebar to a fixed width so it doesn't 'crush' */
+/* 1. Keep the sidebar at a fixed width so it doesn't 'crush' */
     [data-testid="stSidebar"] {
         min-width: 300px !important;
         max-width: 300px !important;
     }
 
-    /* Style the 'expand' button to be a giant green circle */
+    /* 2. Style the 'expand' button (the giant green circle) */
     [data-testid="stSidebarCollapsedControl"] {
         background-color: #2e7d32 !important; /* PestCast Green */
         border-radius: 50% !important;
-        width: 45px !important;
-        height: 45px !important;
-        left: 15px !important;
-        top: 15px !important;
+        width: 50px !important;
+        height: 50px !important;
+        left: 10px !important;
+        top: 10px !important;
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
         z-index: 999999 !important;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+        transition: 0.2s;
     }
 
-    /* Make the white arrows inside the button high-visibility */
+    /* 3. Make the white arrows inside the button look sharp */
     [data-testid="stSidebarCollapsedControl"] svg {
         fill: white !important;
         color: white !important;
-        width: 25px !important;
-        height: 25px !important;
+        width: 28px !important;
+        height: 28px !important;
     }
-            
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
+    /* 4. Hover effect to make it feel interactive */
+    [data-testid="stSidebarCollapsedControl"]:hover {
+        background-color: #1b5e20 !important;
+        transform: scale(1.1);
+    }
 
 # ---------------------------------------------------------------------------
 # Data loaders (cached)
