@@ -573,22 +573,10 @@ def multi_species_hotspots(top_n: int = 20) -> pd.DataFrame:
 
 @st.cache_data
 def load_county_centroids() -> pd.DataFrame:
-    """Compute county centroids (lon, lat) from the counties geojson, keyed by FIPS.
-    Uses an equal-area projection for a numerically stable centroid, then projects
-    back to WGS84 for plotting. The placement difference vs. naive WGS84 centroid
-    is sub-pixel at country scale, but the CRS-correct path avoids a warning and is
-    the right thing to do."""
-    import geopandas as gpd
-    counties = gpd.read_file(RAW / "geo" / "us_counties.geojson")
-    counties["fips"] = (counties["STATE"].astype(str).str.zfill(2)
-                        + counties["COUNTY"].astype(str).str.zfill(3))
-    proj = counties.to_crs(epsg=5070)  # CONUS Albers equal-area
-    centroids = proj.geometry.centroid.to_crs(epsg=4326)
-    return pd.DataFrame({
-        "fips": counties["fips"].values,
-        "lon":  centroids.x.values,
-        "lat":  centroids.y.values,
-    })
+    """Load pre-computed county centroids (lon, lat) from parquet file, keyed by FIPS.
+    Centroids were computed using an equal-area projection for numerical stability,
+    then projected back to WGS84 for plotting."""
+    return pd.read_parquet(PROCESSED / "county_centroids.parquet")
 
 
 # ---------------------------------------------------------------------------
