@@ -1,0 +1,16 @@
+rank,shift_hours,from_state,from_month,from_marginal_per_h,to_state,to_month,to_marginal_per_h,to_dominant_species,expected_gain_detections
+1,200,MN,5,0.0,NV,10,0.000578,ludens,0.1155
+2,200,MN,6,1e-06,NV,9,0.000512,ludens,0.1023
+3,200,MI,5,1e-06,NV,8,0.000457,ludens,0.0913
+4,200,MI,6,1e-06,TX,10,0.000385,ludens,0.0768
+5,200,MN,7,1e-06,CA,10,0.000356,dorsalis,0.071
+6,200,HI,2,1e-06,CA,9,0.000345,dorsalis,0.0688
+7,200,HI,4,1e-06,TX,9,0.000337,ludens,0.0673
+8,200,UT,5,1e-06,TX,8,0.000272,ludens,0.0542
+9,200,PA,5,1e-06,AZ,6,0.000262,ludens,0.0522
+10,200,PA,4,1e-06,CA,8,0.000259,dorsalis,0.0515
+11,200,PA,1,1e-06,TX,11,0.000255,ludens,0.0507
+12,200,MI,4,1e-06,AZ,7,0.00025,ludens,0.0497
+13,200,HI,3,2e-06,NY,9,0.000241,capitata,0.0478
+14,200,UT,6,2e-06,NY,10,0.000236,capitata,0.0468
+15,200,MI,1,2e-06,CA,11,0.000219,dorsalis,0.0436
