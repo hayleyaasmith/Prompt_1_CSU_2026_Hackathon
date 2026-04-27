@@ -88,13 +88,14 @@ st.set_page_config(
                  "for USDA APHIS PPQ. Built on T-100, GATS, EPPO, WorldClim, and APHIS PDR.",
     },
 )
+st.session_state["sidebar_state"] = "expanded"
+
 
 st.markdown("""
 <style>
 /* hide streamlit chrome */
 #MainMenu {visibility: hidden;}
-header[data-testid="stHeader"] {visibility: hidden; height: 0;}
-footer {visibility: hidden;}
+header[data-testid="stHeader"] {background: transparent;} footer {visibility: hidden;}
 [data-testid="stDecoration"] {display: none;}
 [data-testid="stStatusWidget"] {display: none;}
 
@@ -334,19 +335,22 @@ hr { margin: 1rem 0; border-color: #e2e8f0 !important; }
 
 /* st.pills polish — used for unified species selector */
 [data-testid="stPills"] button {
-    font-size: 0.78rem !important;
-    padding: 4px 10px !important;
+    font-size: 0.95rem !important;
+    padding: 8px 16px !important;
+    min-width: 100px !important;
+    min-height: 38px !important;
     border-radius: 999px !important;
     border: 1px solid #cbd5e1 !important;
     background: #ffffff !important;
     color: #475569 !important;
-    font-weight: 500 !important;
-    margin: 2px !important;
+    font-weight: 600 !important;
+    margin: 4px !important;
     transition: all 0.12s ease;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08) !important;
 }
 [data-testid="stPills"] button:hover {
-    background: #f1f5f9 !important;
-    border-color: #94a3b8 !important;
+    background: #eff6ff !important;
+    border-color: #7dd3fc !important;
     color: #0f172a !important;
 }
 [data-testid="stPills"] button[aria-pressed="true"] {
@@ -449,8 +453,42 @@ hr { margin: 1rem 0; border-color: #e2e8f0 !important; }
     border-color: #94a3b8;
     color: #0f172a;
 }
-</style>
-""", unsafe_allow_html=True)
+
+/* 1. Remove the 'display: none' lines so the button actually exists */
+    
+    /* 2. Force the sidebar to a fixed width so it doesn't 'crush' */
+    [data-testid="stSidebar"] {
+        min-width: 300px !important;
+        max-width: 300px !important;
+    }
+
+    /* Style the 'expand' button to be a giant green circle */
+    [data-testid="stSidebarCollapsedControl"] {
+        background-color: #2e7d32 !important; /* PestCast Green */
+        border-radius: 50% !important;
+        width: 45px !important;
+        height: 45px !important;
+        left: 15px !important;
+        top: 15px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        z-index: 999999 !important;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
+    }
+
+    /* Make the white arrows inside the button high-visibility */
+    [data-testid="stSidebarCollapsedControl"] svg {
+        fill: white !important;
+        color: white !important;
+        width: 25px !important;
+        height: 25px !important;
+    }
+            
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 
 # ---------------------------------------------------------------------------
@@ -821,6 +859,7 @@ def layered_risk_map(snap_active: pd.DataFrame, climate_county: pd.DataFrame,
     fig.update_traces(
         marker_line_width=0.15,
         marker_line_color="rgba(71, 85, 105, 0.20)",
+        customdata=base[["county_name", "state"]].values,
         hovertemplate="<b>%{customdata[0]}, %{customdata[1]}</b><br>"
                       "%{z:.0%} of year favorable for establishment<extra></extra>",
         selector=dict(type="choropleth"),
@@ -1042,12 +1081,22 @@ with st.sidebar:
         f"Currently viewing **{SPECIES_SHORT[sp_focus]}**."
     )
 
-    st.markdown("---")
-    st.caption(
-        f"BTS T-100 publishes with a ~3–4 month lag, so the latest fully-released "
-        f"calendar year is CY{BASELINE_YEAR}. The pipeline re-runs each month as "
-        f"new data is released."
-    )
+# Main-page fallback for species selection if the sidebar is not visible.
+sp_main = st.selectbox(
+    "Focus species",
+    options=SPECIES_LIST,
+    index=SPECIES_LIST.index(sp_focus),
+    format_func=lambda s: SPECIES_SHORT.get(s, s),
+    key="species_main",
+)
+sp_focus = st.session_state.get("species_pills", sp_main) or "ludens"
+
+st.markdown("---")
+st.caption(
+    f"BTS T-100 publishes with a ~3–4 month lag, so the latest fully-released "
+    f"calendar year is CY{BASELINE_YEAR}. The pipeline re-runs each month as "
+    f"new data is released."
+)
 
 
 # ---------------------------------------------------------------------------
@@ -1190,10 +1239,11 @@ with tab_pri:
                 fig = professional_choropleth(
                     climate_sp, counties_geo, "long_run_mean", "Favorable months",
                     range_color=(0, 12),
-                    hover_data={"county_name": True, "state": True, "long_run_mean": ":.1f"},
+                    hover_data={},
                     colorscale="YlOrRd",
                 )
                 fig.update_traces(
+                    customdata=climate_sp[["county_name", "state"]].values,
                     hovertemplate="<b>%{customdata[0]}, %{customdata[1]}</b><br>"
                                   "%{z:.1f} favorable months / 12<extra></extra>"
                 )
@@ -1215,9 +1265,14 @@ with tab_pri:
                 fig = professional_choropleth(
                     snap_active, counties_geo, "combined", "Combined risk",
                     range_color=(0, max(df_sp["combined"].max(), 0.01)),
-                    hover_data={"county_name": True, "state": True,
-                                "mu_pathway": ":.2f", "frac_year_favorable": ":.2f",
-                                "combined": ":.3f", "fips": False},
+                    hover_data={},
+                )
+                fig.update_traces(
+                    customdata=snap_active[["county_name", "state", "mu_pathway", "frac_year_favorable"]].values,
+                    hovertemplate="<b>%{customdata[0]}, %{customdata[1]}</b><br>"
+                                  "Pathway μ: %{customdata[2]:.2f}<br>"
+                                  "Climate: %{customdata[3]:.2f}<br>"
+                                  "Combined: %{z:.3f}<extra></extra>"
                 )
                 st.plotly_chart(fig, width="stretch", key="est_risk_map")
 
@@ -1767,6 +1822,7 @@ with tab_est:
             colorscale="YlOrRd",
         )
         fig.update_traces(
+            customdata=county_sp[["county_name", "state"]].values,
             hovertemplate="<b>%{customdata[0]}, %{customdata[1]}</b><br>"
                           "%{z:.1f} favorable months / 12<extra></extra>"
         )
