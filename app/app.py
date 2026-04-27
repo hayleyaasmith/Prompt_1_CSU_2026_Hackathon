@@ -489,6 +489,10 @@ hr { margin: 1rem 0; border-color: #e2e8f0 !important; }
         background-color: #1b5e20 !important;
         transform: scale(1.1);
     }
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
 
 # ---------------------------------------------------------------------------
 # Data loaders (cached)
